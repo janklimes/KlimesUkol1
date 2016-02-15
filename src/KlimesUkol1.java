@@ -3,22 +3,23 @@ import java.util.Scanner;
 public class KlimesUkol1 {
 
 	public static void main(String[] args) {
+		
+		//nacteni vstupu
 		System.out.println("Zadej cislo:");
 		Scanner sc = new Scanner(System.in);
 		boolean jecislo = sc.hasNextInt();
 		
-		
+		//validace vstupu na cislo
 		if (jecislo == false)
 			System.out.println("Neni cislo");
 		else
 		{	
-		
 			int cislo = sc.nextInt();
 		
-		
-		
+		//vypise zadane cislo
 		System.out.println("Zadal jsi cislo: " + cislo);
 		
+		//vypocet
 		for (int i = 2; i < cislo; i++)
 		{
 			int vysledek = cislo/i;
@@ -35,7 +36,6 @@ public class KlimesUkol1 {
 		}
 			
 		System.out.println(cislo + " je prvocislo.");
-		// TODO Auto-generated method stub
 
 	}
 	}
